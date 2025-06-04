@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음의 평화 - 명상과 백색소음</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>마음의 평화</h1>
+            <nav>
+                <button class="nav-btn active" data-section="meditation">명상</button>
+                <button class="nav-btn" data-section="sounds">백색소음</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="meditation" class="section active">
+                <h2>명상 프로그램</h2>
+                <div class="meditation-grid">
+                    <div class="meditation-card">
+                        <img src="images/breathing.jpg" alt="호흡 명상">
+                        <h3>호흡 명상</h3>
+                        <p>10분</p>
+                    </div>
+                    <div class="meditation-card">
+                        <img src="images/sleep.jpg" alt="수면 명상">
+                        <h3>수면 명상</h3>
+                        <p>20분</p>
+                    </div>
+                    <div class="meditation-card">
+                        <img src="images/stress.jpg" alt="스트레스 해소">
+                        <h3>스트레스 해소</h3>
+                        <p>15분</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sounds" class="section">
+                <h2>백색소음</h2>
+                <div class="sounds-grid">
+                    <div class="sound-card">
+                        <img src="images/rain.jpg" alt="빗소리">
+                        <h3>빗소리</h3>
+                        <div class="sound-controls">
+                            <button class="play-btn">재생</button>
+                            <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                    <div class="sound-card">
+                        <img src="images/ocean.jpg" alt="파도소리">
+                        <h3>파도소리</h3>
+                        <div class="sound-controls">
+                            <button class="play-btn">재생</button>
+                            <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                    <div class="sound-card">
+                        <img src="images/forest.jpg" alt="숲소리">
+                        <h3>숲소리</h3>
+                        <div class="sound-controls">
+                            <button class="play-btn">재생</button>
+                            <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="player-container">
+            <div class="now-playing">
+                <img src="" alt="" class="current-image">
+                <div class="track-info">
+                    <h3 class="current-title"></h3>
+                    <p class="current-duration">00:00</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button class="prev-btn">이전</button>
+                <button class="play-pause-btn">재생</button>
+                <button class="next-btn">다음</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
